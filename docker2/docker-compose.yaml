@@ -1,0 +1,20 @@
+version: '2'
+services:
+        database1:
+                image: mysql
+                ports:
+                        - "3306:3306"
+                environment:
+                        - MYSQL_ROOT_PASSWORD=password
+        web1:
+                image: nginx
+                ports:
+                        - "9101:80"
+        web2:
+                image: httpd
+                ports:
+                        - "9100:80"
+
+
+
+
